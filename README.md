@@ -31,7 +31,7 @@ The application demonstrates how to deploy to Heroku from CircleCI 2.0. Please c
 - Enter the following commands:
 
 ```
-createdb circulate
+createdb circulate -U postgres
 pip install -r requirements/dev.txt
 python manage.py deploy
 python manage.py runserver
