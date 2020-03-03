@@ -37,7 +37,7 @@ class DevelopmentConfig(Config):
 class TestingConfig(Config):
     TESTING = True
     SQLALCHEMY_DATABASE_URI = os.environ.get('TEST_DATABASE_URL') or \
-        'postgresql://localhost/circulate'
+        'postgresql://postgres:postgres@localhost/circulate'
     WTF_CSRF_ENABLED = False
 
 
